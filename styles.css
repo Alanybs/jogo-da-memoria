@@ -1,0 +1,51 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-color: #f3f5ed;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  #placar {
+    margin: 20px 0;
+    font-size: 1.2em;
+  }
+  
+  .tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .carta {
+    width: 70px;
+    height: 70px;
+    background-color: #fff01d;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .carta.virada {
+    background-color: #fff;
+    color: #333;
+    cursor: default;
+  }
+  
+  .carta.acertada {
+    background-color: #28a745;
+    color: white;
+    cursor: default;
+  }
+  
